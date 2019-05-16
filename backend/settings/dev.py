@@ -148,3 +148,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_PERMISSION_CLASSES = {
     'rest_framework.permissions.IsAuthenticated'
 }
+
+MEDIA_URL="/media/"
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

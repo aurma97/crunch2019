@@ -6,6 +6,8 @@ The `urlpatterns` list routes URLs to views. For more information please see:
 
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls.static import static
+from django.conf import settings
 from rest_framework import routers
 
 from .api.views import index_view, MessageViewSet 
@@ -24,5 +26,9 @@ urlpatterns = [
     # http://localhost:8000/api/admin/
     path('api/admin/', admin.site.urls),
 
-    path('api/products', include('backend.products.urls'))
+    path('api/manage/products/', include('backend.products.urls')),
+
+    path('api/manage/recipes/', include('backend.recipes.urls'))
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

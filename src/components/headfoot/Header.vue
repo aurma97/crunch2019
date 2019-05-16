@@ -36,9 +36,9 @@
             <header class="navbar">
             <div class="container">
                 <div class="navbar-brand">
-              
-                    <img src="http://innovation-crunch.utbm.fr/wp-content/uploads/2019/02/CRUNCHTIME-QUADRI.png" height="200" width="200" alt="Logo">
-            
+                    <router-link to="/">
+                        <img src="http://innovation-crunch.utbm.fr/wp-content/uploads/2019/02/CRUNCHTIME-QUADRI.png" height="200" width="200" alt="Logo">
+                    </router-link>
                 <span class="navbar-burger burger" data-target="navbarMenuHeroC">
                     <span></span>
                     <span></span>
@@ -50,10 +50,10 @@
                     <router-link class="navbar-item" to="/products" exact>
                         <i class="fas fa-hamburger"></i>&nbsp;&nbsp;Produits
                     </router-link>
-                    <router-link class="navbar-item" to="/permissions" exact>
+                    <router-link class="navbar-item" to="/recipes" exact>
                         <i class="fas fa-concierge-bell"></i>&nbsp;&nbsp;Recettes
                     </router-link>
-                    <router-link class="navbar-item" to="/support" exact>
+                    <router-link class="navbar-item" to="/commands" exact>
                         <i class="fas fa-file-invoice"></i>&nbsp;&nbsp;Commandes
                     </router-link>
                     <span class="navbar-item">
