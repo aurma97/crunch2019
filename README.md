@@ -1,6 +1,7 @@
-# GL52 Project
+# CRUNCHTIME - Bouf'King
+Software to manage food
 
-Winter 2019 - UTBM
+
 
 ### Includes
 
